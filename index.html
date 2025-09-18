@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila's Art - Canecas e Personalizados</title>
+    <style>
+        /* Estilos CSS */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        @font-face {
+            font-family: bergstena;
+            src: url(Fontes/BergstenaScript_PERSONAL_USE_ONLY.otf);
+        }
+        @font-face {
+            font-family: OleoScript;
+            src: url(Fontes/OleoScript-Regular.ttf);
+        }
+
+        :root {
+            --primary-color: #8A2BE2; /* Roxo vibrante */
+            --secondary-color: #FFD700; /* Dourado */
+            --text-color: #333;
+            --background-color: #F8F8FF; /* Branco suave */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header e Hero */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            font-family: bergstena;
+
+
+        }
+
+        header p {
+            font-size: 1.6rem;
+            margin-top: 5px;
+            font-family: OleoScript;
+            font-weight: 100;
+
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/unnamed.png) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0 40px;
+            font-family: OleoScript;
+        }
+
+        .cta-button {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Seções */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        #produtos .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Contato */
+
+        .contact-info p {   
+            margin: 30px;
+        }
+
+        #contato .contact-info {
+            text-align: center;           
+        }
+
+        #contato a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;           
+        }
+
+        #contato a:hover {
+            text-decoration: underline;          
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sheila's Art</h1>
+            <p>Canecas e Personalizados que contam a sua história</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Transformando suas ideias em arte!</h2>
+            <p>Peças únicas e exclusivas para você ou sua empresa.</p>
+            <a href="#produtos" class="cta-button">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="gallery">
+                <div class="product-card">
+                    <img src="img/caneca.png" alt="Caneca Personalizada">
+                    <h3>Caneca Mágica</h3>
+                    <p>Muda de cor com líquido quente!</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/camisa.png" alt="Camiseta Personalizada">
+                    <h3>Camiseta com Estampa</h3>
+                    <p>Estampa em alta definição e tecido premium.</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/conjunto.png" alt="Chaveiro Personalizado">
+                    <h3>Chaveiro com Foto</h3>
+                    <p>Perfeito para presentear quem você ama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-info">
+                <p>Para orçamentos ou pedidos personalizados, fale conosco:</p>
+                <p>
+                    <a href="https://wa.me/55XX9XXXXXXXX" target="_blank" class="cta-button">Fale pelo WhatsApp</a>
+                </p>
+                <p style="margin-top: 15px;">Ou envie um email para: <a href="mailto:contato@sheilasart.com">contato@sheilasart.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sheila's Art. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
